@@ -26,6 +26,16 @@ def show_result(operation, number1, number2, result):
     """
     print("A {} de {:g} por {:g} é: {:g}".format(operation, number1, number2, result))
 
+
+def multiplication():
+    """
+    Realiza multiplicação entre dois números e mostra o resultado na tela
+    """
+    print("--------- Multiplicação ---------")
+    numbers = get_numbers()
+    result = numbers[0] * numbers[1]
+    show_result("multiplicação", numbers[0], numbers[1], result)
+
 def menu():
     print("--------------------------------")
     print("Calculadora simples")
@@ -55,3 +65,5 @@ def menu():
     except:
         print("Opção inválida")
         print("\n")
+
+
