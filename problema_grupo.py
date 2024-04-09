@@ -27,12 +27,3 @@ def menu():
     except:
         print("Opção inválida")
         print("\n")
-
-def subtraction():
-    print("Você escolheu Subtração!")
-    print("\n")
-    num_1 = input("Digite o primeiro valor: ")
-    num_2 = input("Digite o segundo valor: ")
-    result = num_1 - num_2
-
-    print(f'O resultado de {num_1} + {num_2} = {result}')
