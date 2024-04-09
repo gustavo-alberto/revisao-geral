@@ -29,16 +29,11 @@ def menu():
         print("\n")
 
 
-def somar(a, b):
-    """
-    Esta função calcula a soma de dois valores.
+def sum():
+    valor1 = float(input("Digite o primeiro valor: "))
     
-    Argumentos:
-    a (float or int): O primeiro número a ser somado.
-    b (float or int): O segundo número a ser somado.
+    valor2 = float(input("Digite o segundo valor: "))
     
-    Retorna:
-    float or int: A soma de a e b.
-    """
-    resultado = a + b
-    return resultado
+    print(f'A soma dos dois valores é: {valor1 + valor2}')   
+    
+    return None
