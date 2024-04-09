@@ -77,3 +77,11 @@ def menu():
         print("\n")
 
 
+def sum():
+    valor1 = float(input("Digite o primeiro valor: "))
+    
+    valor2 = float(input("Digite o segundo valor: "))
+    
+    print('A soma dos dois valores é: {valor1 + valor2}')   
+    
+    return None
