@@ -22,7 +22,7 @@ def show_result(operation, number1, number2, result):
         operation (string): Operação que foi realizada.
         number1 (float): O primeiro número.
         number2 (float): O segundo número.
-        result (float): O resultado da operação.
+        result (float): O resultado da operação. 
     """
     print("A {} de {:g} por {:g} é: {:g}".format(operation, number1, number2, result))
 
