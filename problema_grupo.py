@@ -27,3 +27,18 @@ def menu():
     except:
         print("Opção inválida")
         print("\n")
+
+
+def somar(a, b):
+    """
+    Esta função calcula a soma de dois valores.
+    
+    Argumentos:
+    a (float or int): O primeiro número a ser somado.
+    b (float or int): O segundo número a ser somado.
+    
+    Retorna:
+    float or int: A soma de a e b.
+    """
+    resultado = a + b
+    return resultado
