@@ -72,6 +72,6 @@ def sum():
     
     valor2 = float(input("Digite o segundo valor: "))
     
-    print(f'A soma dos dois valores é: {valor1 + valor2}')   
+    print('A soma dos dois valores é: {valor1 + valor2}')   
     
     return None
