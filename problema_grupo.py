@@ -1,3 +1,19 @@
+def get_numbers():
+    """
+    Solicita ao usuário dois numeros e retorna uma tupla.
+
+    Returns:
+        numbers: tupla que armazena os dois valores digitados pelo usuário.
+    """
+    try:
+        number1 = float(input("Digite o primeiro número: "))
+        number2 = float(input("Digite o segundo número: "))
+        numbers = (number1, number2)
+        return numbers
+    except:
+        print("Entrada inválida!")
+        get_numbers()
+
 def menu():
     print("--------------------------------")
     print("Calculadora simples")
