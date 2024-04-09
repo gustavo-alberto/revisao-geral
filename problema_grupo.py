@@ -26,6 +26,16 @@ def show_result(operation, number1, number2, result):
     """
     print("A {} de {:g} por {:g} é: {:g}".format(operation, number1, number2, result))
 
+def subtraction():
+    """
+    Realiza subtração entre dois números e mostra o resultado na tela
+
+    """
+
+    print("-------Subtração--------")
+    numbers = get_numbers()
+    result = numbers[0] - numbers[1]
+    show_result("subtraction", numbers[0], numbers[1], result)
 
 def multiplication():
     """
