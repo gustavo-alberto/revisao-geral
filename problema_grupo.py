@@ -1,3 +1,31 @@
+def get_numbers():
+    """
+    Solicita ao usuário dois numeros e retorna uma tupla.
+
+    Returns:
+        numbers: tupla que armazena os dois valores digitados pelo usuário.
+    """
+    try:
+        number1 = float(input("Digite o primeiro número: "))
+        number2 = float(input("Digite o segundo número: "))
+        numbers = (number1, number2)
+        return numbers
+    except:
+        print("Entrada inválida!")
+        get_numbers()
+
+def show_result(operation, number1, number2, result):
+    """
+    Exibe na tela os dois números fornecidos e o resultado.
+
+    Args:
+        operation (string): Operação que foi realizada.
+        number1 (float): O primeiro número.
+        number2 (float): O segundo número.
+        result (float): O resultado da operação.
+    """
+    print("A {} de {:g} por {:g} é: {:g}".format(operation, number1, number2, result))
+
 def menu():
     print("--------------------------------")
     print("Calculadora simples")
