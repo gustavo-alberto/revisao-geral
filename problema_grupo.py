@@ -50,7 +50,7 @@ def division():
     """
     Realiza divisão entre dois números e mostra o resultado na tela
     """
-    operation_header("Divisão")
+    print("Divisão")
     numbers = get_numbers()
     try:
         result = numbers[0] / numbers[1]
