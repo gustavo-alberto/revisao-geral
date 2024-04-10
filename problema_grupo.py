@@ -82,5 +82,17 @@ def sum():
     valor2 = float(input("Digite o segundo valor: "))
     resultado = valor1 + valor2    
     print('A soma dos dois valores é: ', resultado)   
+    
+def divisao():
+    dividendo = float(input("Digite o dividendo: "))
+    divisor = float(input("Digite o divisor: "))
+
+    if divisor != 0:
+        resultado = dividendo / divisor
+        print("O resultado da divisão é:", resultado)
+    else:
+        print("Não é possível dividir por zero.")
+
+divisao()
 
 menu()
