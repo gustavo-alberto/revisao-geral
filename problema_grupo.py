@@ -46,6 +46,19 @@ def multiplication():
     result = numbers[0] * numbers[1]
     show_result("multiplicação", numbers[0], numbers[1], result)
 
+def division():
+    """
+    Realiza divisão entre dois números e mostra o resultado na tela
+    """
+    operation_header("Divisão")
+    numbers = get_numbers()
+    try:
+        result = numbers[0] / numbers[1]
+        show_result("divisão", numbers[0], numbers[1], result)
+    except ZeroDivisionError:
+        print("Impossível dividir por zero")
+        division()
+
 def menu():
     print("--------------------------------")
     print("Calculadora simples")
